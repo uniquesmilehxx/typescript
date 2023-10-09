@@ -1,0 +1,19 @@
+{
+  "name": "rollup_demo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -w -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.1.3"
+  }
+}
