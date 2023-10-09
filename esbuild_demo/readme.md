@@ -22,8 +22,8 @@ esbuild（官网：https://esbuild.bootcss.com/）
 
 ## 二、swc
 
-swc 是用 rust 语言写的，是 用来替代 babel 的（es6 转 es5 等）
-比 babel 最少快 20 倍
+- swc 是用 rust 语言写的，是 用来替代 babel 的（es6 转 es5 等）
+- 比 babel 最少快 20 倍
 
 ## 三、初始化构建
 
@@ -45,9 +45,9 @@ npm i @swc/helpers
 
 #### 根目录新建：
 
-index.ts
-index.html
-config.ts
+- index.ts
+- index.html
+- config.ts
 
 #### 全局安装了 ts-node，因为下面用到了 ts-node 的命令行
 
@@ -61,13 +61,14 @@ npm i @types/node --save-dev
 
 #### tsconfig.json 修改以下三个配置，否则用不了高级语法
 
-修改 target 为 "ESNext"
-修改 Module 为 "ESNext"
-修改 moduleResolution 为 "node"
+- 修改 target 为 "ESNext"
+- 修改 Module 为 "ESNext"
+- 修改 moduleResolution 为 "node"
 
 #### config.ts 中书写配置，详见文件
 
 #### cmd 执行
 
 tsc-node-esm config.ts
+
 则会执行打包，可见 dist 目录下 已转为 es5 的代码
