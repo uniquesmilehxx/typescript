@@ -10,43 +10,43 @@ webpack 打包出来的项目较大，rollup 打包后的项目较小
 
 #### 创建 package.json 文件
 
-npm init -y
+`npm init -y`
 
 #### 在项目下安装 typescript
 
-npm i typescript -D
+`npm i typescript -D`
 
 #### 安装 TypeScript 转换器 (rollup 不认识 ts，所以让 rollup 支持 ts)
 
-npm install rollup-plugin-typescript2 -D
+`npm install rollup-plugin-typescript2 -D`
 
 #### 安装代码压缩插件
 
-npm install rollup-plugin-terser -D
+`npm install rollup-plugin-terser -D`
 
 #### 安装 rollupweb 服务
 
-npm install rollup-plugin-serve -D
+`npm install rollup-plugin-serve -D`
 
 #### 安装热更新
 
-npm install rollup-plugin-livereload -D
+`npm install rollup-plugin-livereload -D`
 
 #### 引入外部依赖
 
-npm install rollup-plugin-node-resolve -D
+`npm install rollup-plugin-node-resolve -D`
 
 #### 安装配置环境变量用来区分本地和生产
 
-npm install cross-env -D
+`npm install cross-env -D`
 
 #### 替换环境变量给浏览器使用
 
-npm install rollup-plugin-replace -D
+`npm install rollup-plugin-replace -D`
 
 #### 生成 tsconfig.json
 
-tsc --init
+`tsc --init`
 
 ## 二、目录手动初始化
 
