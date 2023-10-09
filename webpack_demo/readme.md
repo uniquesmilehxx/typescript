@@ -1,40 +1,48 @@
+#### 在 demo/typescript/webpack_demo 中做示范
 
-// 在 demo/typescript/webpack_demo 中做示范
+## 一、一大堆安装
 
-// 一、一大堆安装
+#### 生成 package.json 文件
 
-// 生成 package.json 文件
-// npm init -y
+`npm init -y`
 
-// 在项目下安装 typescript
-// npm i typescript -D
+#### 在项目下安装 typescript
 
-// 安装 webpack
-// npm i webpack -D
+`npm i typescript -D`
 
-// webpack4 以上的还需要再装一个webpack-cli
-// npm i webpack-cli -D
+#### 安装 webpack
 
-// 安装webpack-dev-server 自带热更新
-// npm i webpack-dev-server -D
+`npm i webpack -D`
 
-// 解析 ts
-// npm i ts-loader -D
+#### webpack4 以上的还需要再装一个 webpack-cli
 
-// html模板
-// npm i html-webpack-plugin -D 
+`npm i webpack-cli -D`
 
-// 生成 tsconfig.json
-// tsc --init
+#### 安装 webpack-dev-server 自带热更新
 
-// 根目录手动新建 webpack.config.js
+`npm i webpack-dev-server -D`
 
+#### 解析 ts
 
+`npm i ts-loader -D`
 
-// 二、配置 webpack.config.js（详见文件）
+#### html 模板
 
+`npm i html-webpack-plugin -D `
 
-// 三、配置 package.json 的 scripts 命令
-    // "dev": "webpack-dev-server",
-    // "build": "webpack"
-// 配置完成之后 执行build，即打包到 dist 目录下
+#### 生成 tsconfig.json
+
+`tsc --init`
+
+#### 根目录手动新建 webpack.config.js
+
+## 二、配置 webpack.config.js（详见文件）
+
+## 三、配置 package.json 的 scripts 命令
+
+    ```js
+    "dev": "webpack-dev-server",
+    "build": "webpack"
+    ```
+
+    配置完成之后 执行 build，即打包到 dist 目录下
