@@ -141,13 +141,13 @@ webpack 打包出来的项目较大，rollup 打包后的项目较小
 - 但是 process.env 是 node 环境里面的东西，浏览器里面没这个东西（在 index.ts 中 打印不到），怎么在浏览器里面也访问到呢？
   插件：rollup-plugin-replace（类似于 webpack 的 definePlugin）
 
-      ```js
-      replace({
-          // 将 node的环境变量 注册到 浏览器中
-          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-          // 可以自己随意定义，比如 a: xxxxx
-      }),
-      ```
+  ```js
+  replace({
+      // 将 node的环境变量 注册到 浏览器中
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      // 可以自己随意定义，比如 a: xxxxx
+  }),
+  ```
 
   然后浏览器环境也可以打印到了
 
