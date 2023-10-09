@@ -113,13 +113,11 @@ webpack 打包出来的项目较大，rollup 打包后的项目较小
         }
         ```
 
-- 压缩完之后，代码有报错不好调试怎么办？
+- 压缩完之后，代码有报错不好调试怎么办？开启 sourcemap：
 
-  开启 sourcemap：
+  - output -> sourcemap 设置为 true
 
-      - output -> sourcemap 设置为true
-
-      - tsconfig.json中 sourceMap 也得开启
+  - tsconfig.json 中 sourceMap 也得开启
 
   开启后，打印的内容可以直接定位到某一行
 
