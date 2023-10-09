@@ -29,19 +29,19 @@ esbuild（官网：https://esbuild.bootcss.com/）
 
 #### 生成 package.json 文件
 
-npm init -y
+`npm init -y`
 
 #### 生成 tsconfig.json
 
-tsc --init
+`tsc --init`
 
 #### 安装相关依赖
 
-npm i @swc/core esbuild
+`npm i @swc/core esbuild`
 
 #### 如果需要支持 jsx、tsx 需要安装 @swc/helpers ，这里暂不安装
 
-npm i @swc/helpers
+`npm i @swc/helpers`
 
 #### 根目录新建：
 
@@ -51,11 +51,11 @@ npm i @swc/helpers
 
 #### 全局安装了 ts-node，因为下面用到了 ts-node 的命令行
 
-npm install -g ts-node
+`npm install -g ts-node`
 
 #### 安装 @types/node，否则 ts 中引入 node 会报错
 
-npm i @types/node --save-dev
+`npm i @types/node --save-dev`
 
 ## 四、修改配置
 
@@ -69,6 +69,6 @@ npm i @types/node --save-dev
 
 #### cmd 执行
 
-tsc-node-esm config.ts
+`tsc-node-esm config.ts`
 
 则会执行打包，可见 dist 目录下 已转为 es5 的代码
